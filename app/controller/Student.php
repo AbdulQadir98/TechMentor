@@ -14,6 +14,11 @@ class Student extends Controller{
         $this->view->render("Student", $data);
     }    
 
+    public function add(){
+        
+        $this->view->render("StudentForm");
+    }    
+
     public function submit(){
         
         $firstname = $_POST['firstname'];
