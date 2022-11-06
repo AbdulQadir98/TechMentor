@@ -10,11 +10,12 @@
 	
 		<!-- custom css files -->
 	    <link rel="stylesheet" href="<?php echo BASEURL.'/public/assets/css/table.css'?>">
+		<link rel="stylesheet" href="<?php echo BASEURL.'/public/assets/css/homepage.css'?>">
 
 	</head>
 
 	<body>
-	  <div>
+	  <div class="main">
 
 		<div>
 		  <table class="styled-table">       
@@ -42,7 +43,7 @@
 		  </table>
 		</div>
 
-		<button onclick="window.location.href='/page2'">Add Student</button>
+		<button onclick="window.location.href='<?php echo BASEURL.'/student/add'?>'">Add Student</button>
 	
 	  </div>
 	</body>

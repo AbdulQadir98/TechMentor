@@ -14,21 +14,24 @@
 	</head>
 
 	<body>
-	  <div>
+
+	  <div class="box">
 		<h2>Student Form</h2>
+		<p>Enter details</p>
 
-		<div>
-			<form action="<?php echo BASEURL.'/Student/submit';?>" method="post">
-		
-				<input type="text" id="firstname" placeholder="first name" name="firstname">
-				<label for="firstname">First Name</label>
-				<input type="text" id="lastname" placeholder="last name" name="lastname">
-				<label for="lastname">Last Name</label>
-
+			<form action="<?php echo BASEURL.'/Student/submit';?>" method="get">
+				<div class="inputBox">
+					<input type="text" id="firstname" name="firstname">
+					<label for="firstname">First Name</label>
+				</div>
+				
+				<div class="inputBox">
+					<input type="text" id="lastname" name="lastname">
+					<label for="lastname">Last Name</label>
+				</div>
+				
 				<input type="submit" name="submit" value="Submit">
-			
 			</form>
-		</div>
 	
 	  </div>
 	</body>

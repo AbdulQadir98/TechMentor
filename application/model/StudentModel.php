@@ -7,7 +7,7 @@ class StudentModel extends Model{
     }
     
     function getStudents(){
-        $query = "SELECT * FROM student ";
+        $query = "SELECT * FROM student";
         $stmt = $this->db->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll();
